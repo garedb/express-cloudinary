@@ -10,7 +10,7 @@ let cloudinary = require('cloudinary')
 app.set('view engine', 'ejs')
 app.use(ejsLayouts)
 cloudinary.config(process.env.CLOUDINARY_URL)
-let imgUrl = cloudinary.url('pwnviyhlghchtkrdksdw', {width: 200, height: 200})
+let imgUrl = cloudinary.url('ezplpgmpqorlmg6uer80', {width: 600, height: 400})
 
 app.get('/', function(req, res) {
   res.render('index', {image: imgUrl});
