@@ -1,0 +1,32 @@
+Making an Express App
+
+1. create empty folder
+2. cd into folder
+3. npm init -y
+4. npm install express
+5. touch index.js
+6. Create a .gitignore
+7. Put node_modules and .env in .gitignore
+8. Git init
+9. Git add .
+10. Git commit -m "Initial commit"
+11. follow the steps in the index.js to create bare bones express app
+12. type nodemon or node index.js from the file in terminal to see if the app responds
+13. Set up ejs
+14. Make a views folder in the top level
+15. Set up express layouts let layouts = require('express-ejs-layouts')
+16. App.use('layouts')
+17. Create layout.ejs in the views folder
+18. Create an error.ejs in the views folder
+19. Render error.ejs page from the wildcard (catch all) route. res.render('error')
+20. Create a static folder then app.use(express.static('static')) in index.js
+21. Add style.css or css folder in static folder and link in layout.ejs
+22. Make a partials folder inside of views
+23. Make a nav.ejs and/or footer.ejs inside the partials folder
+24. Include them in the layout.ejs <%- include('partials/nav') %>
+25. Add some styles for the nav
+26. Create a home.ejs in the views folder, home route in index.js
+27. Make a controllers and an auth.js inside of it
+28. Make stub routes in the router (auth.js)
+29. Include the router in index.js
+30. Make an auth folder in the views folder and then create .ejs files for the login/etc
